@@ -11,8 +11,12 @@ class App extends StatelessWidget {
     return MaterialApp(
       title: 'Password Generator',
       theme: ThemeData(
+        primaryColor: Colors.red,
+        brightness: Brightness.light,
+        dividerColor: Colors.red.shade300,
+        colorScheme: const ColorScheme.light(primary: Colors.red),
         primarySwatch: Colors.red,
-        appBarTheme: AppBarTheme(
+        appBarTheme: const AppBarTheme(
           backgroundColor: Colors.red,
           titleTextStyle: TextStyle(color: Colors.white),
         ),

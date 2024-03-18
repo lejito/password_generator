@@ -89,8 +89,6 @@ class _PasswordGeneratorState extends State<PasswordGenerator> {
                             value.round().toString();
                       });
                     },
-                    thumbColor: Colors.red,
-                    activeColor: Colors.red,
                   ),
                 ),
                 SizedBox(
@@ -113,12 +111,6 @@ class _PasswordGeneratorState extends State<PasswordGenerator> {
                       errorText: _validateInput(_passwordLengthController.text)
                           ? null
                           : 'El valor debe estar entre $_minPasswordLength y $_maxPasswordLength',
-                      enabledBorder: const UnderlineInputBorder(
-                        borderSide: BorderSide(color: Colors.red),
-                      ),
-                      focusedBorder: const UnderlineInputBorder(
-                        borderSide: BorderSide(color: Colors.red),
-                      ),
                     ),
                   ),
                 ),
